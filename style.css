@@ -1,0 +1,36 @@
+/* style.css */
+body {
+	font-family: Arial, sans-serif;
+	background-color: #000000;
+	color: #333;
+}
+
+h1 {
+	font-size: 36px;
+	text-align: center;
+	margin-top: 50px;
+    color: #ffffff;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+p {
+	font-size: 18px;
+	line-height: 1.5;
+	margin: 30px;
+    color: #ffffff;
+}
+
+a {
+	color: #0066cc;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
