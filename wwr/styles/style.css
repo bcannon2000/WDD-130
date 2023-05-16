@@ -13,6 +13,8 @@
   --footer-link-color: #EAEAEA;
   --background-color: #6890ba;
   --text-background-color: #2E4053;
+  --link-hover-color: #16202a;
+  --contactus-color: #2E4053;
 }
 
  div {
@@ -36,8 +38,9 @@
  footer, .msg, .join {
   background-color: var(--text-background-color);
   color: var(--msg-text-color);
+  text-decoration: none;
  }
- #icon, .logo {
+ .icon, .logo {
   width: 80px;
 }
 nav a {
@@ -47,6 +50,12 @@ nav a {
 }  
 nav a:hover {
   color: var(--link-color);
+  background-color: var(--link-hover-color);
+}
+.book {
+  color: var(--contactus-color);
+  background-color: #a5cfff;
+  text-decoration: none;
 }
 .mountains {
   width: 50%;
