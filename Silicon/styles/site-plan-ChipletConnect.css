@@ -127,9 +127,12 @@ nav a:hover {
   grid-template-rows: 3em 1.5em 1.5em 3em;
   grid-template-areas: ". . home home . ."
     ". . . top . ."
-    ". left left right right ."
-    "page2 page2 . . page3 page3";
+    "left left middle middle right right "
+    "chiplets chiplets adv_package adv_package products products";
 }
+/* ". left left center center right right ."
+"page1 page1 page2 page2 page3 page3";
+*/
 .sitemap > div {
   text-align: center;
 }
@@ -138,13 +141,18 @@ nav a:hover {
   background-color: #ccc;
   line-height: 3em;
 }
-.sm-page2 {
-  grid-area: page2;
+.sm-chiplets {
+  grid-area: chiplets;
   background-color: #ccc;
   line-height: 3em;
 }
-.sm-page3 {
-  grid-area: page3;
+.sm-adv_package {
+  grid-area: adv_package;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.sm-products {
+  grid-area: products;
   background-color: #ccc;
   line-height: 3em;
 }
@@ -154,6 +162,11 @@ nav a:hover {
 }
 .left {
   grid-area: left;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+.middle {
+  grid-area: middle;
   border-top: 1px solid;
   border-left: 1px solid;
 }
