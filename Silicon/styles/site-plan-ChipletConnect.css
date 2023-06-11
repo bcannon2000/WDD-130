@@ -119,27 +119,20 @@ nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
 }
+
 .sitemap {
   display: grid;
   justify-content: center;
 
   grid-template-columns: repeat(6, 15%);
   grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas: ". . home home . ."
+  grid-template-areas: ". . chiplets chiplets . ."
     ". . . top . ."
-    "left left middle middle right right "
-    "chiplets chiplets adv_package adv_package products products";
+    ". left left right right ."
+    "adv_package adv_package . . products products";
 }
-/* ". left left center center right right ."
-"page1 page1 page2 page2 page3 page3";
-*/
 .sitemap > div {
   text-align: center;
-}
-.sm-home {
-  grid-area: home;
-  background-color: #ccc;
-  line-height: 3em;
 }
 .sm-chiplets {
   grid-area: chiplets;
@@ -156,20 +149,85 @@ nav a:hover {
   background-color: #ccc;
   line-height: 3em;
 }
+
+
+.advanced_packaging {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(6, 15%);
+  grid-template-rows: 3em 1.5em 1.5em 3em;
+  grid-template-areas: ". . adv_package adv_package . ." 
+    ". . . top . ." 
+    ". left left right right ." 
+    "packaged_products packaged_products package_pros package_pros package_cons package_cons";
+}
+
+.advanced_packaging > div {
+  text-align: center;
+}
+.sm-adv_package {
+  grid-area: adv_package;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.sm-packaged_products {
+  grid-area: packaged_products;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.sm-package_pros {
+  grid-area: package_pros;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.sm-package_cons {
+  grid-area: package_cons;
+  background-color: #ccc;
+  line-height: 3em;
+}
+
+
+.products_interconnects {
+  display: grid;
+  justify-content: center;
+
+  grid-template-columns: repeat(6, 15%);
+  grid-template-rows: 3em 1.5em 1.5em 3em;
+  grid-template-areas: ". . products_inter products_inter . ." 
+    ". . . top . ." 
+    ". left left right right ." 
+    "interconnects interconnects . . products products";
+}
+.products_interconnects > div {
+  text-align: center;
+}
+.sm-products_inter {
+  grid-area: products_inter;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.sm-interconnects {
+  grid-area: interconnects;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.sm-products {
+  grid-area: products;
+  background-color: #ccc;
+  line-height: 3em;
+}
+
 .top {
   grid-area: top;
   border-left: 1px solid;
 }
+
 .left {
   grid-area: left;
   border-top: 1px solid;
   border-left: 1px solid;
 }
-.middle {
-  grid-area: middle;
-  border-top: 1px solid;
-  border-left: 1px solid;
-}
+
 .right {
   grid-area: right;
   border-top: 1px solid;
