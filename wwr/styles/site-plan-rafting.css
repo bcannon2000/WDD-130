@@ -148,6 +148,46 @@ nav a:hover {
   background-color: #ccc;
   line-height: 3em;
 }
+
+
+.Page2 {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(6, 15%);
+  grid-template-rows: 3em 1.5em 1.5em 3em;
+  grid-template-areas:
+    ". . header header . ."
+    ". . . navigation . ."
+    ". . rates-dates rates-dates . ."
+    ".. footer footer . . . .";
+}
+.Page2 > div {
+  text-align: center;
+}
+.sitemap-header {
+  grid-area: header;
+  background-color: #ccc;
+  line-height: 3em;
+}
+
+.sitemap-navigation {
+  grid-area: navigation;
+  background-color: #ccc;
+  line-height: 3em;
+}
+
+.sitemap-rates-dates {
+  grid-area: rates-dates;
+  background-color: #ccc;
+  line-height: 3em;
+}
+
+.sitemap-footer {
+  grid-area: footer;
+  background-color: #ccc;
+  line-height: 3em;
+}
+
 .top {
   grid-area: top;
   border-left: 1px solid;
