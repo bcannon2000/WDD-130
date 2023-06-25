@@ -1,235 +1,215 @@
-
-/* if you are using any Google fonts change the font names below to your fonts. 
-Any spaces in your font name should be replaced with a +. 
-Fonts are separated by a & */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
-
-:root {
+ 
+/* if you are using any Google fonts change the font names below to your fonts. Any spaces in your font name should be replaced with a +. Fonts are separated by a & */
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+ :root {
     /* change the values below to your colors from your palette */
-    --primary-color: #FF5722;
-    --secondary-color: #2196F3;
-    --accent1-color: #FFC107;
-    --accent2-color: #4CAF50;
-
+     --primary-color: #FF5722;
+     --secondary-color: #2196F3;
+     --accent1-color: #FFC107;
+     --accent2-color: #4CAF50;
     /* change the values below to your chosen font(s) */
-    --heading-font: 'Montserrat', sans-serif;
-    --paragraph-font: 'Open Sans', sans-serif;
-
-    --headline-color-on-white: #333333;
-    --headline-color-on-color: #FFFFFF;
-    --paragraph-color-on-white: #333333;
-    --paragraph-color-on-color: #F5F5F5;
-    --paragraph-background-color: #333333;
-    --nav-link-color: #FFFFFF;
-    --nav-background-color: #333333;
-    --nav-hover-link-color: #333333;
-    --nav-hover-background-color: #FFFFFF;
+     --heading-font: 'Montserrat', sans-serif;
+     --paragraph-font: 'Open Sans', sans-serif;
+     --headline-color-on-white: #333333;
+     --headline-color-on-color: #FFFFFF;
+     --paragraph-color-on-white: #333333;
+     --paragraph-color-on-color: #F5F5F5;
+     --paragraph-background-color: #333333;
+     --nav-link-color: #FFFFFF;
+     --nav-background-color: #333333;
+     --nav-hover-link-color: #333333;
+     --nav-hover-background-color: #FFFFFF;
 }
-
-
-/*  Look around below...but DON'T CHANGE ANYTHING! */
-
-body {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 4em;
-  font-size: 18px;
-  text-align: center;
+/* Look around below...but DON'T CHANGE ANYTHING! */
+ body {
+     max-width: 960px;
+     margin: 0 auto;
+     padding: 4em;
+     font-size: 18px;
+     text-align: center;
 }
-img {
-  display: block;
-  margin: 0 auto;
-  max-width: 300px;
+ img {
+     display: block;
+     margin: 0 auto;
+     max-width: 300px;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  color: var(--headline-color-on-white);
+ h1, h2, h3, h4, h5, h6 {
+     font-family: var(--heading-font);
+     color: var(--headline-color-on-white);
 }
-h2 {
-  text-align: center;
+ h2 {
+     text-align: center;
 }
-hr {
-  height: 3px;
-  margin: 35px 0;
-  background: var(--accent1-color);
+ hr {
+     height: 3px;
+     margin: 35px 0;
+     background: var(--accent1-color);
 }
-header {
-  padding: 1em;
-  text-align: center;
-  color: var(--headline-color-on-color);
-  background-color: var(--paragraph-background-color);
+ header {
+     padding: 1em;
+     text-align: center;
+     color: var(--headline-color-on-color);
+     background-color: var(--paragraph-background-color);
 }
-header > h1, header > h2 {
-  color: var(--headline-color-on-color);
+ header > h1, header > h2 {
+     color: var(--headline-color-on-color);
 }
-p {
-  font-family: var(--paragraph-font);
-  color: var(--paragraph-color-on-white);
-  padding: 1em;
+ p {
+     font-family: var(--paragraph-font);
+     color: var(--paragraph-color-on-white);
+     padding: 1em;
 }
-.colors {
-  width: 100%;
-  min-width: 350px;
-  margin: 30px auto;
-  text-align: center;
+ .colors {
+     width: 100%;
+     min-width: 350px;
+     margin: 30px auto;
+     text-align: center;
 }
-.colors th {
-  background-color: #999;
+ .colors th {
+     background-color: #999;
 }
-.colors td{
-  width: 25%;
-  height: 3em;
+ .colors td{
+     width: 25%;
+     height: 3em;
 }
-.primary {
-  background-color: var(--primary-color);
+ .primary {
+     background-color: var(--primary-color);
 }
-.secondary {
-  background-color: var(--secondary-color);
+ .secondary {
+     background-color: var(--secondary-color);
 }
-.accent1 {
-  background-color: var(--accent1-color);
+ .accent1 {
+     background-color: var(--accent1-color);
 }
-.accent2{
-  background-color: var(--accent2-color);
+ .accent2{
+     background-color: var(--accent2-color);
 }
-p.colored {
-  background-color: var(--paragraph-background-color);
-  color: var(--paragraph-color-on-color);
+ p.colored {
+     background-color: var(--paragraph-background-color);
+     color: var(--paragraph-color-on-color);
 }
-nav {
-  background-color: var(--nav-background-color);
-  line-height: 3em;
-  text-align: center;
-  font-size: 1.2em;
+ nav {
+     background-color: var(--nav-background-color);
+     line-height: 3em;
+     text-align: center;
+     font-size: 1.2em;
 }
-nav  {
-  list-style-type: none;
-  display: flex;
+ nav {
+     list-style-type: none;
+     display: flex;
 }
-nav a {
-  padding:1em;
-  min-width: 120px;
-  text-decoration: none;
-  padding: 10px;
+ nav a {
+     padding:1em;
+     min-width: 120px;
+     text-decoration: none;
+     padding: 10px;
 }
-nav a:link, nav a:visited {
-  color: var(--nav-link-color);
+ nav a:link, nav a:visited {
+     color: var(--nav-link-color);
 }
-nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
+ nav a:hover {
+     color: var(--nav-hover-link-color);
+     background-color: var(--nav-hover-background-color);
 }
-
-.sitemap {
-  display: grid;
-  justify-content: center;
-
-  grid-template-columns: repeat(6, 15%);
-  grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas: ". . chiplets chiplets . ."
-    ". . . top . ."
-    ". left left right right ."
-    "adv_package adv_package . . products products";
+ .sitemap {
+     display: grid;
+     justify-content: center;
+     grid-template-columns: repeat(6, 15%);
+     grid-template-rows: 3em 1.5em 1.5em 3em;
+     grid-template-areas: ". . chiplets chiplets . ." ". . . top . ." ". left left right right ." "adv_package adv_package . . products products";
 }
-.sitemap > div {
-  text-align: center;
+ .sitemap > div {
+     text-align: center;
 }
-.sm-chiplets {
-  grid-area: chiplets;
-  background-color: #ccc;
-  line-height: 3em;
+ .sm-chiplets {
+     grid-area: chiplets;
+     background-color: #ccc;
+     line-height: 3em;
 }
-.sm-adv_package {
-  grid-area: adv_package;
-  background-color: #ccc;
-  line-height: 3em;
+ .sm-adv_package {
+     grid-area: adv_package;
+     background-color: #ccc;
+     line-height: 3em;
 }
-.sm-products {
-  grid-area: products;
-  background-color: #ccc;
-  line-height: 3em;
+ .sm-products {
+     grid-area: products;
+     background-color: #ccc;
+     line-height: 3em;
 }
-
-
 .advanced_packaging {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(6, 15%);
   grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas: ". . adv_package adv_package . ." 
+  grid-template-areas: 
+  ". . adv_package adv_package . ." 
     ". . . top . ." 
     ". left left right right ." 
     "packaged_products packaged_products package_pros package_pros package_cons package_cons";
 }
-
-.advanced_packaging > div {
-  text-align: center;
+ .advanced_packaging > div {
+     text-align: center;
 }
-.sm-adv_package {
-  grid-area: adv_package;
-  background-color: #ccc;
-  line-height: 3em;
+ .sm-adv_package {
+     grid-area: adv_package;
+     background-color: #ccc;
+     line-height: 3em;
 }
-.sm-packaged_products {
-  grid-area: packaged_products;
-  background-color: #ccc;
-  line-height: 3em;
+ .sm-packaged_products {
+     grid-area: packaged_products;
+     background-color: #ccc;
+     line-height: 3em;
 }
-.sm-package_pros {
-  grid-area: package_pros;
-  background-color: #ccc;
-  line-height: 3em;
+ .sm-package_pros {
+     grid-area: package_pros;
+     background-color: #ccc;
+     line-height: 3em;
 }
-.sm-package_cons {
-  grid-area: package_cons;
-  background-color: #ccc;
-  line-height: 3em;
+ .sm-package_cons {
+     grid-area: package_cons;
+     background-color: #ccc;
+     line-height: 3em;
 }
-
-
-.products_interconnects {
-  display: grid;
-  justify-content: center;
-
-  grid-template-columns: repeat(6, 15%);
-  grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas: ". . products_inter products_inter . ." 
-    ". . . top . ." 
-    ". left left right right ." 
-    "interconnects interconnects . . products products";
+ .products_interconnects {
+     display: grid;
+     justify-content: center;
+     grid-template-columns: repeat(6, 15%);
+     grid-template-rows: 3em 1.5em 1.5em 3em;
+     grid-template-areas: 
+     ". . products_inter products_inter . ." 
+     ". . . top . ." 
+     ". left left right right ." 
+ }
+ .products_interconnects > div {
+     text-align: center;
 }
-.products_interconnects > div {
-  text-align: center;
+ .sm-products_inter {
+     grid-area: products_inter;
+     background-color: #ccc;
+     line-height: 3em;
 }
-.sm-products_inter {
-  grid-area: products_inter;
-  background-color: #ccc;
-  line-height: 3em;
+ .sm-interconnects {
+     grid-area: interconnects;
+     background-color: #ccc;
+     line-height: 3em;
 }
-.sm-interconnects {
-  grid-area: interconnects;
-  background-color: #ccc;
-  line-height: 3em;
+ .sm-products {
+     grid-area: products;
+     background-color: #ccc;
+     line-height: 3em;
 }
-.sm-products {
-  grid-area: products;
-  background-color: #ccc;
-  line-height: 3em;
+ .top {
+     grid-area: top;
+     border-left: 1px solid;
 }
-
-.top {
-  grid-area: top;
-  border-left: 1px solid;
+ .left {
+     grid-area: left;
+     border-top: 1px solid;
+     border-left: 1px solid;
 }
-
-.left {
-  grid-area: left;
-  border-top: 1px solid;
-  border-left: 1px solid;
+ .right {
+     grid-area: right;
+     border-top: 1px solid;
+     border-right: 1px solid;
 }
-
-.right {
-  grid-area: right;
-  border-top: 1px solid;
-  border-right: 1px solid;
-}
+ 
