@@ -1,13 +1,12 @@
 :root {
-  /* Color variables */
+  /* change the values below to your colors from your palette */
    --primary-color: #FF5722;
    --secondary-color: #2196F3;
    --accent1-color: #FFC107;
    --accent2-color: #4CAF50;
-  /* Font variables */
+  /* change the values below to your chosen font(s) */
    --heading-font: 'Montserrat', sans-serif;
    --paragraph-font: 'Open Sans', sans-serif;
-  /* Other variables */
    --headline-color-on-white: #333333;
    --headline-color-on-color: #FFFFFF;
    --paragraph-color-on-white: #333333;
@@ -18,7 +17,6 @@
    --nav-hover-link-color: #333333;
    --nav-hover-background-color: #FFFFFF;
 }
-/* Body Styles */
 body {
    background-color: #F8F8F8;
    max-width: 960px;
@@ -26,44 +24,14 @@ body {
    padding: 4em;
    font-size: 18px;
 }
-/* Image Styles */
 img {
    margin: 0 auto;
-   max-width: 500px;
-}
-/* Text Styles */
-.italicized-text {
-   font-style: italic;
-}
-/* Heading Styles */
-h1, h2, h3, h4, h5, h6 {
-   font-family: var(--heading-font);
-   color: var(--headline-color-on-white);
+   max-width: 600px;
 }
 h1 {
    text-align: center;
-}
-/* List Item Styles */
-li {
-   margin-bottom: 30px;
-}
-/* Keyword Styles */
-.keyword {
-   text-decoration: underline;
    font-weight: bold;
 }
-/* Section Styles */
-#chiplet-defined {
-}
-#chiplet-explanation {
-}
-#keywords {
-}
-#adv-packaging {
-}
-#products {
-}
-/* Navigation Styles */
 nav {
    background-color: var(--nav-background-color);
    line-height: 3em;
