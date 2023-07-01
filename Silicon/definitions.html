@@ -1,62 +1,51 @@
 <!DOCTYPE html>
 <html lang="en-us">
-	<head>
-		<meta charset="utf-8" />
-		<title>Site Plan</title>
-		<link type="text/css" rel="stylesheet" href="styles/definitions.css" />
-	</head>
-	<div id="content">
-		<header>
-			<a id="logo_link" href="index.html">
-				<img class="logo" src="images/Logo image.png" alt="Silicon Wafer">
-			</a>
-			<nav>
-				<a href="index.html">Chiplets</a>
-				<a href="advanced_packaging.html">Advanced Packaging</a>
-				<a href="products.html">Types of Products</a>
-				<a href="definitions.html">Important Definitions</a>
-			</nav>
-		</header>
-	</div>
-	<body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Site Plan</title>
+    <link type="text/css" rel="stylesheet" href="styles/definitions.css" />
+  </head>
+  <body>
 
+    <div id="content">
+      <header>
+        <a id="logo_link" href="index.html">
+          <img class="logo" src="images/logo-image.avif" alt="Silicon Wafer">
+        </a>
+        <nav>
+          <a href="index.html">Chiplets</a>
+          <a href="advanced_packaging.html">Advanced Packaging</a>
+          <a href="products.html">Types of Products</a>
+          <a href="definitions.html">Important Definitions</a>
+        </nav>
+      </header>
+    </div>
 
-		<section class="important-definitions">
-			<h1>Important Definitions</h1>
+    <section class="important-definitions">
+      <h1>Important Definitions</h1>
+      <h4>Semiconductor Dies:</h4>
+      <p> The individual chips or dies that perform specific functions, such as processors, memory, or specialized components. </p>
+      <div class="image">
+        <img src="images/Dies.avif" alt="Picture of Semiconductor die from a wafer" />
+      </div>
 
-			<h4>Semiconductor Dies:</h4>
-			<p>
-				The individual chips or dies that perform specific functions, such as processors, memory, or specialized components.
-			</p>
-			<div class="image">
-				<img src="images/Dies.avif" alt="Picture of Semiconductor die from a wafer" />
-			</div>
+      <h4 id="TSVs">Through-Silicon Vias (TSVs):</h4>
+      <p> Through-silicon vias are vertical electrical connections that pass through the silicon substrate of a semiconductor device. They enable communication and electrical connections between different layers or components within a chip or a 3D package. They are made with a pillar of copper that passes either from the bottom to top when used for active power passthrough or can start within the die when stacking passive die. </p>
+      <div class="image">
+        <img src="images/Foveros.avif" alt="Intel Foveros" />
+      </div>
 
-			<h4 id="TSVs">Through-Silicon Vias (TSVs):</h4>
-			<p>
-				Through-silicon vias are vertical electrical connections that pass through the silicon substrate of a semiconductor device. They enable communication and electrical connections between different layers or components within a
-				chip or a 3D package. They are made with a pillar of copper that passes either from the bottom to top when used for active power passthrough or can start within the die when stacking passive die.
-			</p>
-			<div class="image">
-				<img src="images/Foveros.avif" alt="Intel Foveros" />
-			</div>
-
-			<h4 id="interposer">Interposer:</h4>
-			<p>
-				A silicon-based substrate that serves as a bridge between the semiconductor dies. It provides a platform for mounting and connecting the dies and contains the necessary interconnect structures, such as through-silicon vias
-				(TSVs) or microbumps, to establish electrical connections between the dies and the interposer.
-			</p>
-			<div class="image">
-				<img src="images/blank.avif" alt="" />
-			</div>
-
-			<h4 id="Substrate">Substrate:</h4>
-			<p>
-				The substrate provides a foundation for the interposer and helps to mechanically support and protect the 2.5D package. It also facilitates the electrical connections between the interposer and the external system or PCB.
-			</p>
-			<div class="image">
-				<img src="images/blank.avif" alt="" />
-			</div>
-		</section>
-	</body>
+      <h4 id="interposer">Interposer:</h4>
+      <p> A silicon-based substrate that serves as a bridge between the semiconductor dies. It provides a platform for mounting and connecting the dies and contains the necessary interconnect structures, such as through-silicon vias (TSVs) or microbumps, to establish electrical connections between the dies and the interposer. </p>
+      <div class="image">
+        <img src="images/blank.avif" alt="" />
+      </div>
+	  
+      <h4 id="Substrate">Substrate:</h4>
+      <p> The substrate provides a foundation for the interposer and helps to mechanically support and protect the 2.5D package. It also facilitates the electrical connections between the interposer and the external system or PCB. </p>
+      <div class="image">
+        <img src="images/blank.avif" alt="" />
+      </div>
+    </section>
+  </body>
 </html>

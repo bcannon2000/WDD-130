@@ -1,116 +1,85 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
-	<meta charset="utf-8" />
-	<title>Site Plan</title>
-	<link type="text/css" rel="stylesheet" href="styles/index.css" />
-</head>
-<div id="content">
-	<header>
-		<a id="logo_link" href="index.html">
-			<img class="logo" src="images/Logo image.png" alt="Silicon Wafer">
-		</a>
-		<nav>
-			<a href="index.html">Chiplets</a>
-			<a href="advanced_packaging.html">Advanced Packaging</a>
-			<a href="products.html">Types of Products</a>
-			<a href="definitions.html">Important Definitions</a>
-		</nav>
-	</header>
-</div>
+  <head>
+    <meta charset="utf-8" />
+    <title>Site Plan</title>
+    <link type="text/css" rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
 
-<body>
-	<p>If you are new to the silicon industry, <a href="definitions.html" class="italicized-text">here</a> is a list of important definitions.</p>
+    <div id="content">
+      <header>
+        <a id="logo_link" href="index.html">
+          <img class="logo" src="images/logo-image.avif" alt="Silicon Wafer">
+        </a>
+        <nav>
+          <a href="index.html">Chiplets</a>
+          <a href="advanced_packaging.html">Advanced Packaging</a>
+          <a href="products.html">Types of Products</a>
+          <a href="definitions.html">Important Definitions</a>
+        </nav>
+      </header>
+    </div>
 
-	<section id="chiplet-intro">
-		<h1>What are Chiplets?</h1>
-		<p>
-			First, we need to talk about what a <span class="italicized-text">normal</span> chip or dies are. The most common chips, in most consumer devices, are called monolithic or a single piece of silicon. When a chip is broken
-			into separate parts, there are multiple levels of disaggregation. The most common version is called chiplets, but there is a more "basic" version called MCM or Multiple Chip Module.
-		</p>
-		<p>
-			MCM is generally accepted as having multiple of the same dies interconnected to act as a single processor. This picture below shows a server CPU in both a hypothetical, large monolithic die compared to four of the same dies
-			interconnected to each other.
-		</p>
-		<div class="image">
-			<img src="images/MCM vs monolithic.avif" alt="" />
-		</div>
-	</section>
+    <p>If you are new to the silicon industry, <a href="definitions.html" class="italicized-text">here</a> is a list of important definitions. </p>
 
-	<section id="chiplet-defined">
-		<p>
-			Chiplets are individual functional units or components of an integrated circuit (IC) that are designed and fabricated separately and then interconnected to form a larger system. Instead of building a single monolithic IC
-			containing all the required functions, chiplets allow for modular and flexible integration of different components.
-		</p>
-		<p>
-			How I view the difference between MCM and chiplets is based on how AMD explains it. The simplified version is that MCM is when multiple of the same die are interconnected but isn't dependent on having multiple chips.
-			Chiplets are similar to MCM, but they use multiple different dies and generally rely on having one of each kind. For examples, <a href="products.html" class="italicized-text">click here</a>. Below is a picture of the
-			evolution of AMD's server processors.
-		</p>
-		<div class="image">
-			<img src="images/Chiplets_evolution.avif" alt="" />
-		</div>
-	</section>
+    <section id="chiplet-intro">
+      <h1>What are Chiplets?</h1>
+      <p> First, we need to talk about what a <span class="italicized-text">normal</span> chip or dies are. The most common chips, in most consumer devices, are called monolithic or a single piece of silicon. When a chip is broken into separate parts, there are multiple levels of disaggregation. The most common version is called chiplets, but there is a more "basic" version called MCM or Multiple Chip Module. </p>
+      <p> MCM is generally accepted as having multiple of the same dies interconnected to act as a single processor. This picture below shows a server CPU in both a hypothetical, large monolithic die compared to four of the same dies interconnected to each other. </p>
+      <div class="image">
+        <img src="images/MCM-vs-monolithic.avif" alt="" />
+      </div>
+    </section>
 
-	<section id="chiplet-explanation">
-		<h2>Why do we use Chiplets?</h2>
-		<p>
-			Each chiplet is typically designed to perform a specific function, such as a processor core, memory controller, input/output interface, or specialized accelerator. They are fabricated on separate dies using different
-			semiconductor process technologies optimized for their specific functions. This modular approach allows for more efficient development and manufacturing as well as better customization and scalability.
-		</p>
-		<p>
-			Chiplets are interconnected using advanced packaging technologies, such as silicon interposers or through-silicon vias 
-	<a href="definitions.html#TSVs" class="italicized-text">(TSVs)</a>, which provide the electrical and mechanical connections 
-	between the different chiplets. These interconnects enable high-speed data transfer and communication between the chiplets, 
-	forming a cohesive system.
-		</p>
-	</section>
+    <section id="chiplet-defined">
+      <p> Chiplets are individual functional units or components of an integrated circuit (IC) that are designed and fabricated separately and then interconnected to form a larger system. Instead of building a single monolithic IC containing all the required functions, chiplets allow for modular and flexible integration of different components. </p>
+      <p> How I view the difference between MCM and chiplets is based on how AMD explains it. The simplified version is that MCM is when multiple of the same die are interconnected but isn't dependent on having multiple chips. Chiplets are similar to MCM, but they use multiple different dies and generally rely on having one of each kind. For examples, <a href="products.html" class="italicized-text">click here</a>. Below is a picture of the evolution of AMD's server processors. </p>
+      <div class="image">
+        <img src="images/Chiplets_evolution.avif" alt="" />
+      </div>
+    </section>
 
-	<section id="keywords">
-		<ul>
-			<li>
-				<span class="keyword">Design flexibility:</span>
-				Different chiplets can be mixed and matched to create customized ICs tailored for specific applications, allowing for faster design iterations 
-				and shorter time-to-market.
-			</li>
-			<li>
-				<span class="keyword">Performance optimization:</span>
-				Each chiplet can be optimized for its specific function, allowing for better performance and power efficiency compared to a monolithic IC where 
-				all functions are integrated on a single die.
-			</li>
-			<li>
-				<span class="keyword">Technology scaling:</span>
-				Different chiplets can be manufactured using different process technologies, enabling the use of advanced nodes for certain functions while still 
-				using mature or specialized technologies for others.
-			</li>
-			<li>
-				<span class="keyword">System integration:</span>
-				Chiplets enable the integration of diverse components and technologies into a single package, facilitating system-level integration and reducing 
-				the overall form factor.
-			</li>
-			<li>
-				<span class="keyword">Yield improvement:</span>
-				If a defect is found in one chiplet during manufacturing, only that specific chiplet needs to be replaced, reducing the impact on overall yield 
-				and cost.
-			</li>
-		</ul>
-	</section>
+    <section id="chiplet-explanation">
+      <h2>Why do we use Chiplets?</h2>
+      <p> Each chiplet is typically designed to perform a specific function, such as a processor core, memory controller, input/output interface, or specialized accelerator. They are fabricated on separate dies using different semiconductor process technologies optimized for their specific functions. This modular approach allows for more efficient development and manufacturing as well as better customization and scalability. </p>
+      <p> Chiplets are interconnected using advanced packaging technologies, such as silicon interposers or through-silicon vias <a href="definitions.html#TSVs" class="italicized-text">(TSVs)</a>, which provide the electrical and mechanical connections between the different chiplets. These interconnects enable high-speed data transfer and communication between the chiplets, forming a cohesive system. </p>
+    </section>
 
-	<section id="adv-packaging">
-		<h2>Advanced Packaging</h2>
-		<div class="image">
-			<img src="images/blank.avif" alt="" />
-		</div>
-		<p>Click <a href="advanced_packaging.html" class="italicized-text">here</a> examples for advanced packaging</p>
-	</section>
+    <section id="keywords">
+      <ul>
+        <li>
+          <span class="keyword">Design flexibility:</span> Different chiplets can be mixed and matched to create customized ICs tailored for specific applications, allowing for faster design iterations and shorter time-to-market.
+        </li>
+        <li>
+          <span class="keyword">Performance optimization:</span> Each chiplet can be optimized for its specific function, allowing for better performance and power efficiency compared to a monolithic IC where all functions are integrated on a single die.
+        </li>
+        <li>
+          <span class="keyword">Technology scaling:</span> Different chiplets can be manufactured using different process technologies, enabling the use of advanced nodes for certain functions while still using mature or specialized technologies for others.
+        </li>
+        <li>
+          <span class="keyword">System integration:</span> Chiplets enable the integration of diverse components and technologies into a single package, facilitating system-level integration and reducing the overall form factor.
+        </li>
+        <li>
+          <span class="keyword">Yield improvement:</span> If a defect is found in one chiplet during manufacturing, only that specific chiplet needs to be replaced, reducing the impact on overall yield and cost.
+        </li>
+      </ul>
+    </section>
+
+    <section id="adv-packaging">
+      <h2>Advanced Packaging</h2>
+      <div class="image">
+        <img src="images/blank.avif" alt="" />
+      </div>
+      <p>Click <a href="advanced_packaging.html" class="italicized-text">here</a> examples for advanced packaging </p>
+    </section>
 	
-	<section id="products">
-		<h2>Products</h2>
-		<div class="image">
-			<img src="images/blank.avif" alt="" />
-		</div>
-		<p>Click <a href="products.html" class="italicized-text">here</a> product examples</p>
-	</section>
-
-</body>
+    <section id="products">
+      <h2>Products</h2>
+      <div class="image">
+        <img src="images/blank.avif" alt="" />
+      </div>
+      <p>Click <a href="products.html" class="italicized-text">here</a> product examples </p>
+    </section>
+  </body>
 </html>

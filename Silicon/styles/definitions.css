@@ -1,112 +1,99 @@
 :root {
-   /* Fonts */
-   --heading-font: 'Roboto', sans-serif;
-   --paragraph-font: 'Open Sans', sans-serif;
- 
-   /* Colors */
-   --primary-color: #FF5722; /* Vibrant shade of orange */
-   --secondary-color: #808080; /* Bright shade of blue */
-   --accent1-color: #FFC107; /* Warm shade of yellow */
-   --accent2-color: #4CAF50; /* Lively shade of green */
- 
-   /* Other styles */
-   --headline-color-on-white: #333333;
-   --paragraph-color-on-white: #333333;
-   --paragraph-background-color: #F8F8F8;
-   --nav-link-color: #FFFFFF;
-   --nav-background-color: #333333;
-   --nav-hover-link-color: #333333;
-   --nav-hover-background-color: #FFFFFF;
- }
- 
- header {
-   background-color: var(--secondary-color);
-   display: grid;
-   grid-template-columns: 150px auto;
- }
- 
- body {
-   background-color: var(--paragraph-background-color);
-   font-family: var(--heading-font);
-   font-size: 22px;
-   margin: 0;
-   padding: 50px;
- }
- 
- p {
-   text-indent: 1em;
-   font-size: 18px;
-   color: var(--paragraph-color-on-white);
-   background-color: var(--paragraph-background-color);
-   margin-bottom: 1.5em;
-   line-height: 1.5;
- }
- 
- img {
-   margin: 0 auto;
-   max-width: 100%;
-   height: auto;
- }
- 
- h1, h2, h3, h4, h5, h6 {
-   font-family: var(--heading-font);
-   color: var(--headline-color-on-white);
- }
- 
- h1 {
-   text-align: center;
- }
- 
- nav {
-   background-color: var(--secondary-color);
-   line-height: 3em;
-   text-align: center;
-   font-size: 1.2em;
-   list-style-type: none;
-   display: flex;
-   justify-content: space-around;
- }
- 
- nav a {
-   padding: 1em;
-   min-width: 120px;
-   text-decoration: none;
-   padding: 10px;
- }
- 
- nav a:link, nav a:visited {
-   color: var(--nav-link-color);
- }
- 
- nav a:hover {
-   color: var(--nav-hover-link-color);
-   background-color: var(--nav-hover-background-color);
- }
- 
- #logo_link {
-   padding-top: 5px;
-   justify-self: center;
-   align-self: center;
- }
- 
- .icon, .logo {
-   width: 80px;
- }
- 
- .important-definitions {
-   margin-top: 50px;
- }
- 
- h4 {
-   color: var(--accent1-color);
- }
- 
- .image {
-   text-align: center;
-   margin-bottom: 30px;
- }
- 
- .image img {
-   border: 1px solid var(--accent1-color);
- }
- 
+  /* Fonts */
+  --heading-font: 'Roboto', sans-serif;
+  --paragraph-font: 'Open Sans', sans-serif;
+
+  /* Colors */
+  --primary-color: #FF5722; /* Vibrant shade of orange */
+  --secondary-color: #808080; /* Bright shade of blue */
+  --accent1-color: #FFC107; /* Warm shade of yellow */
+  --accent2-color: #4CAF50; /* Lively shade of green */
+
+  /* Other styles */
+  --headline-color-on-white: #333333;
+  --paragraph-color-on-white: #333333;
+  --paragraph-background-color: #F8F8F8;
+  --nav-link-color: #FFFFFF;
+  --nav-background-color: #333333;
+  --nav-hover-link-color: #333333;
+  --nav-hover-background-color: #FFFFFF;
+}
+header {
+  background-color: var(--secondary-color);
+  display: grid;
+  grid-template-columns: 150px auto;
+}
+body {
+  background-color: var(--paragraph-background-color);
+  font-family: var(--heading-font);
+  font-size: 22px;
+  margin: 0;
+  padding: 50px;
+}
+p {
+  text-indent: 1em;
+  font-size: 18px;
+  color: var(--paragraph-color-on-white);
+  background-color: var(--paragraph-background-color);
+  margin-bottom: 1.5em;
+  line-height: 1.5;
+}
+img {
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+h1 {
+  text-align: center;
+}
+#content {
+max-width: 1600px;
+margin: 5px auto;
+}
+nav {
+  background-color: var(--secondary-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+nav a {
+  padding: 1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+}
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+#logo_link {
+  padding-top: 5px;
+  justify-self: center;
+  align-self: center;
+}
+.icon, .logo {
+  width: 80px;
+}
+.important-definitions {
+  margin-top: 50px;
+}
+h4 {
+  color: var(--accent1-color);
+}
+.image {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.image img {
+  border: 1px solid var(--accent1-color);
+}
