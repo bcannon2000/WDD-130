@@ -4,10 +4,10 @@
   --paragraph-font: 'Open Sans', sans-serif;
 
   /* Colors */
- --primary-color: #FF5722; /* Vibrant shade of orange */
- --secondary-color: #808080; /* Bright shade of blue */
- --accent1-color: #FFC107; /* Warm shade of yellow */
- --accent2-color: #4CAF50; /* Lively shade of green */
+  --primary-color: #FF5722; /* Vibrant shade of orange */
+  --secondary-color: #808080; /* Bright shade of blue */
+  --accent1-color: #FFC107; /* Warm shade of yellow */
+  --accent2-color: #4CAF50; /* Lively shade of green */
 
   /* Other styles */
   --headline-color-on-white: #333333;
@@ -31,6 +31,24 @@ header {
   max-width: 1600px;
   margin: 5px auto;
 }
+.content-container {
+  max-width: 1500px; /* Set the maximum width of the container */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add some padding around the content */
+}
+.color-bar {
+  height: 100%; /* Set the height of the colored bars */
+}
+.left-bar {
+  width: 20%; /* Set the width of the left colored bar */
+  background-color: #FF5722; /* Set the desired background color for the left bar */
+  float: left; /* Float the left bar to the left */
+}
+.right-bar {
+  width: 20%; /* Set the width of the right colored bar */
+  background-color: #FF5722; /* Set the desired background color for the right bar */
+  float: right; /* Float the right bar to the right */
+}
 body {
   background-color: var(--paragraph-background-color);
   font-family: var(--heading-font);
@@ -40,11 +58,11 @@ body {
 }
 p {
   text-indent: 1em;
-  font-size: 18px;
+  font-size: 20px;
   color: var(--paragraph-color-on-white);
   background-color: var(--paragraph-background-color);
   margin-bottom: 1.5em;
-  line-height: 1.5
+  line-height: 1.5;
 }
 img {
   margin: 0 auto;
@@ -62,6 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   text-align: center;
 }
+
 li {
   margin-bottom: 30px;
 }
@@ -90,11 +109,6 @@ nav a:link, nav a:visited {
 nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
-}
-img {
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
 }
 #logo_link {
   padding-top: 5px;

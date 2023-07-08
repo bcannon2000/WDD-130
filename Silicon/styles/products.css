@@ -26,13 +26,13 @@ header {
 body {
   background-color: var(--paragraph-background-color);
   font-family: var(--heading-font);
-  font-size: 22px;
+  font-size: 20px;
   margin: 0;
   padding: 50px;
 }
 p {
   text-indent: 1em;
-  font-size: 18px;
+  font-size: 20px;
   color: var(--paragraph-color-on-white);
   background-color: var(--paragraph-background-color);
   margin-bottom: 1.5em;
