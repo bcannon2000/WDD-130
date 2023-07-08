@@ -18,6 +18,7 @@
   --nav-hover-link-color: #333333;
   --nav-hover-background-color: #FFFFFF;
 }
+
 .home-grid {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
@@ -46,7 +47,7 @@ header {
 }
 .right-bar {
   width: 20%; /* Set the width of the right colored bar */
-  background-color: #FF5722; /* Set the desired background color for the right bar */
+  background-color: #808080; /* Set the desired background color for the right bar */
   float: right; /* Float the right bar to the right */
 }
 body {
@@ -117,14 +118,4 @@ nav a:hover {
 }
 .icon, .logo {
   width: 80px;
-}
-#chiplet-defined {
-}
-#chiplet-explanation {
-}
-#keywords {
-}
-#adv-packaging {
-}
-#products {
 }

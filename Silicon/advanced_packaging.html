@@ -5,69 +5,96 @@
     <title>Site Plan</title>
     <link type="text/css" rel="stylesheet" href="styles/advanced_packaging.css" />
   </head>
-  <body>
-    <div class="content-container">
-      <div class="color-bar">
-        <div id="content">
-          <header>
-            <a id="logo_link" href="index.html">
-              <img class="logo" src="images/logo-image.avif" alt="Silicon Wafer">
-            </a>
-            <nav>
-              <a href="index.html">Chiplets</a>
-              <a href="advanced_packaging.html">Advanced Packaging</a>
-              <a href="products.html">Types of Products</a>
-              <a href="definitions.html">Important Definitions</a>
-            </nav>
-          </header>
-        </div>
+  <body class="content-container">
+    
+    <div>
+      <header>
+        <a id="logo_link" href="index.html">
+          <img class="logo" src="images/logo-image.avif" alt="Silicon Wafer">
+        </a>
+        <nav>
+          <a href="index.html">Chiplets</a>
+          <a href="advanced_packaging.html">Advanced Packaging</a>
+          <a href="products.html">Types of Products</a>
+          <a href="definitions.html">Important Definitions</a>
+        </nav>
+      </header>
+    </div>
 
-        <h1>Types of Packaging</h1>
-        <p>
-          There are quite a few diffrent types of "Advanced Packaging," but I will be focusing on the most advanced versions, 2.5D and 3D stacking.
-        </p>
-        <div class="img">
-          <img src="images/Packaging/2_5D_3D_stacking.avif" alt="" />
-        </div>
-        <section class="2-5D section">
-          <h2>2.5D Packaging</h2>
-          <p>
-            2.5D packaging, also known as 2.5D interposer packaging, is an advanced packaging technique used to integrate multiple chiplets onto a shared interposer substrate.
-            Chiplets are individual functional units or components of an integrated circuit (IC) that are designed and fabricated separately. 2.5D packaging provides a means 
-            to bring these chiplets together in a compact and highly efficient manner.
-          </p>
-          
-          <div class="image">
-            <img src="images/Packaging/2_5D_packaging.avif" alt="" />
-          </div>
-          <p>
-            Explanation of picture
-          </p>
-
-          <div class="image">
-            <img src="images/blank.avif" alt="" />
-          </div>
-
-          <p>
-            Explanation of picture
-          </p>
-        </section>
+    <h1>Types of Packaging</h1>
+    <p>
+      There are quite a few diffrent types of "Advanced Packaging," but I will be focusing on the most advanced versions, 2.5D and 3D stacking.
+    </p>
+    <div class="img">
+      <img src="images/Packaging/2_5D_3D_stacking.avif" alt="" />
+    </div>
+    <section class="2-5D section">
+      <h2>2.5D Packaging</h2>
+      <p>
+        2.5D packaging, also known as 2.5D interposer packaging, is an advanced packaging technique used to integrate multiple chiplets onto a shared interposer substrate.
+        Chiplets are individual functional units or components of an integrated circuit (IC) that are designed and fabricated separately. 2.5D packaging provides a means 
+        to bring these chiplets together in a compact and highly efficient manner.
+      </p>
       
-        <section class="3D section">
-          <h2>3D Packaging</h2>
-          <p>Definition of 3D packaging</p>
-          <div class="image">
-            <img src="images/blank.avif" alt="" />
-          </div>
-          <p>Explanation of picture</p>
-          <div class="image">
-            <img src="images/blank.avif" alt="" />
-          </div>
-          <p>
-            Explanation of picture
-          </p>
-        </div>
+      <div class="img">
+        <img src="images/Packaging/2_5D_packaging.avif" alt="" />
       </div>
+      <p>
+        The picture above shows an substrate with an interposer that has chiplets stacked on top. The 2.5 TSVs passes data and power to/from the chips or memory chips that are 
+        on top the interposter The interposer is made using the same technology that our processors used in 2005, called 65/55nm. The interposer interposer allows for precise wires 
+        routing to be made and allow for the chiplets and memory to directly communicate between each other extremely fast. 
+      </p>
+
+      <div class="img">
+        <img src="images/Packaging/Intel_packaging.avif" alt="" />
+      </div>
+
+      <p>
+        These are the main 2.5D packaging technique. Multi-Chip Packaging, or MCP, is the most basic packaging simple called, 2D. The silicon interposer is the simpler and
+        easier to impliment. The last version skips the interposer entirely and embeds a silicon bridge that directly connects the dies together with no other interference. 
+        Intel calls their silicon bridge tech EMIB or embedded multi-die interconnect bridge, TSMC calls thiers InFO-LSI or Integrated Fanouts(InfO) Local Silicon Interconnect (LSI).
+      </p>
+
+    </section>
+	
+    <section class="3D section">
+      <h2>3D Packaging</h2>
+      <p>
+        3D stacking, also known as 3D packaging or vertical integration, is an advanced semiconductor packaging technique that involves vertically stacking multiple dies or 
+        chips on top of each other. This vertical arrangement allows for increased component density, improved performance, and form factor optimization. Through-silicon vias 
+        (TSVs) are used to establish electrical connections between the stacked components, enabling high-bandwidth communication and synchronization. This technique facilitates 
+        the integration of dies or chips with different functionalities, process technologies, or manufacturers, known as heterogeneous integration, to optimize system performance 
+        and functionality. 3D stacking offers advantages in terms of performance, power efficiency, and form factor optimization, making it a powerful packaging approach for compact 
+        and highly integrated semiconductor devices.
+      </p>
+
+      <div class="img">
+        <img src="images/Packaging/solder_bumps_vs_hybrid.avif" alt="" />
+      </div>
+      <p>
+        The picture depicts a cross-section of a semiconductor package demonstrating two stacking technologies: hybrid bonding and solder bumps. The package consists of multiple 
+        chiplets vertically stacked on top of each other, representing a 3D integration configuration. In the right portion of the image, the hybrid bonding, or copper to copper bonding
+        technique is illustrated. It showcases two semiconductor wafers bonded together using the hybrid bonding process. The wafers are aligned and brought into close contact,
+        creating a direct and intimate atomic or molecular connection at the bonding interface. This hybrid bonding allows for efficient electrical connections between the stacked
+        wafers, enabling high-speed data transfer and interconnectivity. 
+      </p>
+      <p>
+        In the left portion of the image, the solder bump technology is depicted. It highlights the use of small solder bumps or solder balls between the chips and the substrate or 
+        interposer. The solder bumps are shown as spherical structures connecting the bonding pads of the chips to the corresponding pads on the substrate. Through the application of 
+        heat, the solder bumps undergo a phase change, forming metallurgical bonds as they solidify. Technology provides reliable electrical connections between the stacked components,
+        facilitating efficient signal transmission and power distribution.
+      </p>
+      <p>
+        Together, the picture showcases both hybrid bonding and solder bumps as key stacking technologies in semiconductor packaging. These techniques enable the integration of 
+        multiple chips or chiplets in a compact and efficient manner, enhancing performance, power efficiency, and form factor optimization in advanced semiconductor devices.
+      </p>
+      <div class="img">
+        <img src="images/Packaging/AMD_X3D.avif" alt="" />
+      </div>
+      <p>
+        Above is one of the first major consumer products that had 3D stacking inplimented. They named this specific implimation of hybrid bonding, AMD 3D V-cache. This came out to 
+        consumers and data center products in 2022 and tripled the on chip memory, or cache, from 32MB to 96MB without any major downsides other than voltage, thermal, and power limitations. 
+      </p>
     </section>
   </body>
 </html>
