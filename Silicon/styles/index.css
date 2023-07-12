@@ -8,6 +8,7 @@
    --secondary-color: #333333;
    --accent1-color: #FFFFFF;
    --accent2-color: #F8F8F8;
+   --image-border-color: #CCCCCC;
  }
 .home-grid {
    display: grid;
@@ -102,15 +103,15 @@ footer p, footer p a {
   background-color: var(--primary-color);
   color: var(--secondary-color);
 }
-.footer a {
-  display: inline-block; /* Add this line to make the anchor elements inline blocks */
-  margin-right: 10px; /* Add some spacing between the icons */
-  width: 60px; /* Adjust the width of the icons as needed */
-  height: 60px; /* Adjust the height of the icons as needed */
-}
-.footer a:last-child {
-  margin-right: 0; /* Remove the margin-right for the last icon */
-}
+.social a {
+   display: inline-block; /* Add this line to make the anchor elements inline blocks */
+   margin-right: 10px; /* Add some spacing between the icons */
+   width: 60px; /* Adjust the width of the icons as needed */
+   height: 60px; /* Adjust the height of the icons as needed */
+ }
+ .social a:last-child {
+   margin-right: 0; /* Remove the margin-right for the last icon */
+ }
 img {
    margin: 0 auto;
    max-width: 100%;

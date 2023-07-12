@@ -20,22 +20,37 @@
         </nav>
       </header>
     </div>
-
-    <p>If you are new to the silicon industry, <a href="definitions.html" class="italicized-text">here</a> is a list of important definitions. </p>
+    <p>
+      If you are new to the silicon industry, <a href="definitions.html" class="italicized-text">here</a> is a list of important definitions. 
+    </p>
 
     <section id="chiplet-intro">
       <h1>What are Chiplets?</h1>
-      <p> First, we need to talk about what a <span class="italicized-text">normal</span> chip or dies are. The most common chips, in most consumer devices, are called monolithic or a single piece of silicon. When a chip is broken into separate parts, there are multiple levels of disaggregation. The most common version is called chiplets, but there is a more "basic" version called MCM or Multiple Chip Module. </p>
-      <p> MCM is generally accepted as having multiple of the same dies interconnected to act as a single processor. This picture below shows a server CPU in both a hypothetical, large monolithic die compared to four of the same dies interconnected to each other. </p>
-      <div class="image">
+      <p> 
+        First, we must talk about what a <span class="italicized-text">typical</span> chip or dies are. The most common chips in consumer devices are monolithic or a single piece of 
+        silicon. When a chip is broken into separate parts, there are multiple levels of disaggregation. The most common version is called chiplets, but a more "basic" version of 
+        chiplet technology is called MCM or Multiple Chip 
+        Module. 
+      </p>
+      <p> 
+        MCM is generally accepted as having interconnected multiple of the same dies to act as a single processor. The picture below shows a server CPU in a hypothetical, large 
+        monolithic die compared to four of the same dies interconnected.
+      </p>  
+        <div class="image">
         <img src="images/MCM-vs-monolithic.avif" alt="" />
       </div>
     </section>
 
     <section id="chiplet-defined">
       <p> 
-        Chiplets are individual functional units or components of an integrated circuit (IC) that are designed and fabricated separately and then interconnected to form a larger system. Instead of building a single monolithic IC containing all the required functions, chiplets allow for modular and flexible integration of different components. </p>
-      <p> How I view the difference between MCM and chiplets is based on how AMD explains it. The simplified version is that MCM is when multiple of the same die are interconnected but isn't dependent on having multiple chips. Chiplets are similar to MCM, but they use multiple different dies and generally rely on having one of each kind. For examples, <a href="products.html" class="italicized-text">click here</a>. Below is a picture of the evolution of AMD's server processors. </p>
+        Chiplets are individual functional units or components of an integrated circuit (IC) designed, fabricated separately, and then interconnected to form a more extensive chip. 
+        Instead of building a single monolithic IC containing all the required functions, chiplets allow for modular and flexible integration of different components. 
+      </p>
+      <p> 
+        I view the difference between MCM and chiplets based on how AMD explains it. The simplified version is that MCM is when multiple of the same die are interconnected but are not 
+        dependent on having various chips. Chiplets are similar to MCM but use many different dies and generally rely on having one of each kind. For examples, click here. Below is a 
+        picture of the evolution of AMD's server processors.
+      </p>
       <div class="image">
         <img src="images/Chiplets_evolution.avif" alt="" />
       </div>
@@ -44,31 +59,33 @@
     <section id="chiplet-explanation">
       <h2>Why do we use Chiplets?</h2>
       <p> 
-        Each chiplet is typically designed to perform a specific function, such as a processor core, memory controller, input/output interface, or specialized accelerator. 
-        They are fabricated on separate dies using different semiconductor process technologies optimized for their specific functions. This modular approach allows for more 
-        efficient development and manufacturing as well as better customization and scalability. 
+        Each chiplet is typically designed to perform a specific function, such as a processor core, memory controller, input/output interface, or specialized accelerator. They are 
+        fabricated on separate dies using different semiconductor process technologies optimized for their specific functions. This modular approach allows for more efficient 
+        development and manufacturing as well as better customization and scalability. 
       </p>
       <p> 
-        Chiplets are interconnected using advanced packaging technologies, such as silicon interposers or through-silicon vias 
-        <a href="definitions.html#TSVs" class="italicized-text">(TSVs)</a>, which provide the electrical and mechanical connections between the different chiplets. 
-        These interconnects enable high-speed data transfer and communication between the chiplets, forming a cohesive system. 
+        Chiplets are interconnected using advanced packaging technologies, such as silicon interposers or through-silicon vias <a href="definitions.html#TSVs" class="italicized-text">(TSVs)</a>, 
+        providing electrical and mechanical connections between the different chiplets. These interconnect allow for high-speed data transfer and communication between the chiplets, forming a cohesive system.
       </p>
     </section>
 
-    <section id="keywords">
+    <section>
       <ul>
         <li>
-          <span class="keyword">Design flexibility</span>: Different chiplets can be mixed and matched to create customized ICs tailored for specific applications, allowing for faster design iterations and shorter time-to-market.
+          <span class="keyword">Design flexibility</span>: Different chiplets can be mixed and matched to create customized ICs tailored for specific applications, allowing for faster 
+          design iterations and shorter time-to-market.
         </li>
         <li>
-          <span class="keyword">Performance optimization</span>: Each chiplet can be optimized for its specific function, allowing for better performance and power efficiency compared to a monolithic IC where all functions are integrated on a single die.
+          <span class="keyword">Performance optimization</span>: Each chiplet is optimized for its specific function. It can improve performance and power efficiency than a monolithic 
+          IC, where all parts are integrated on a single die.
         </li>
         <li>
-          <span class="keyword">Technology scaling</span>: Different chiplets can be manufactured using different process technologies, enabling the use of advanced nodes for certain functions while still using mature or specialized technologies for others.
+          <span class="keyword">Technology scaling</span>: Different chiplets can be manufactured using different process technologies, enabling the use of advanced nodes for specific 
+          functions while still using mature or specialized technologies for others.
         </li>
         <li>
           <span class="keyword">Yield improvement</span>: Like all technology, there is a given chance of errors. Generally, the error chance is around 0.2 to 0.08 defects per square cm.
-          The bigger the die size, but more likely there will be an error that requires the die to be sold for cheaper and have a few parts disabled. 
+           The bigger the die size, but more likely, an error will require the die to be sold for cheaper and has a few parts disabled. 
         </li>
       </ul>
     </section>
@@ -81,10 +98,10 @@
         </a>
       </div>
       <p>
-        As we delve deeper into the fascinating world of chiplets, it's essential to explore the cutting-edge technologies that enable their seamless integration and 
-        unlock even greater possibilities. Advanced packaging, a crucial component in this revolution, plays a pivotal role in bringing chiplets together, enhancing 
-        performance, optimizing power efficiency, and enabling remarkable miniaturization. Let's embark on a journey to discover the innovative world of advanced packaging 
-        and its transformative impact on modern semiconductor systems.
+        s we delve deeper into the fascinating world of chiplets, we must explore the cutting-edge technologies that enable their seamless integration and unlock even greater 
+        possibilities. Advanced packaging, a crucial component in this revolution, is pivotal in bringing chiplets together, enhancing performance, optimizing power efficiency, 
+        and enabling remarkable miniaturization. Let's embark on a journey to discover the innovative world of advanced packaging and its transformative impact on modern semiconductor 
+        systems. 
       </p>
     </section>
 	
@@ -101,8 +118,8 @@
   <footer class="footer">
     <p>ChipletConnect &copy; - 2023<br>Benjamin Cannon</p>
     <p><a href="#">About</a></p>
-    <p><a href="#">Contact</a></p>
-    <div>
+    <p><a href="site-plan-ChipletConnect.html">Site Plan</a></p>
+    <div class="social">
         <a href="https://facebook.com" target="_blank">
             <img src="images/facebook.avif" alt="fb icon">
         </a>
