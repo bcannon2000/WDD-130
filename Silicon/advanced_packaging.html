@@ -6,20 +6,18 @@
     <link type="text/css" rel="stylesheet" href="styles/advanced_packaging.css" />
   </head>
   <body class="content-container">
-    
-    <div>
-      <header>
-        <a id="logo_link" href="index.html">
-          <img class="logo" src="images/logo-image.avif" alt="Silicon Wafer">
-        </a>
-        <nav>
-          <a href="index.html">Chiplets</a>
-          <a href="advanced_packaging.html">Advanced Packaging</a>
-          <a href="products.html">Types of Products</a>
-          <a href="definitions.html">Important Definitions</a>
-        </nav>
-      </header>
-    </div>
+    <header id="menu">
+      <a id="logo_link" href="index.html">
+        <img class="logo" src="images/logo-image.avif" alt="Silicon Wafer">
+      </a>
+      <nav id="navbar">
+        <a href="index.html">Chiplets</a>
+        <a href="advanced_packaging.html">Advanced Packaging</a>
+        <a href="products.html">Types of Products</a>
+        <a href="definitions.html">Important Definitions</a>
+      </nav>
+    </header>
+  </div>
 
     <h1>Types of Packaging</h1>
     <p>
@@ -114,4 +112,17 @@
         </a>
     </div>
   </footer>
+  <script>
+    var navbar = document.getElementById("navbar");
+    var menu = document.getElementById("menu");
+
+    window.onscroll = function(){
+      if(window.pageYOffset >= menu.offsetTop) {
+        navbar.classList.add("sticky");
+      }
+      else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
 </html>

@@ -6,20 +6,18 @@
     <link type="text/css" rel="stylesheet" href="styles/index.css" />
   </head>
   <body class="content-container">
-
-    <div id="content">
-      <header>
-        <a id="logo_link" href="index.html">
-          <img class="logo" src="images/logo-image.avif" alt="Silicon Wafer">
-        </a>
-        <nav>
-          <a href="index.html">Chiplets</a>
-          <a href="advanced_packaging.html">Advanced Packaging</a>
-          <a href="products.html">Types of Products</a>
-          <a href="definitions.html">Important Definitions</a>
-        </nav>
-      </header>
-    </div>
+    <header id="menu">
+      <a id="logo_link" href="index.html">
+        <img class="logo" src="images/logo-image.avif" alt="Silicon Wafer">
+      </a>
+      <nav id="navbar">
+        <a href="index.html">Chiplets</a>
+        <a href="advanced_packaging.html">Advanced Packaging</a>
+        <a href="products.html">Types of Products</a>
+        <a href="definitions.html">Important Definitions</a>
+      </nav>
+    </header>
+  </div>
     <p>
       If you are new to the silicon industry, <a href="definitions.html" class="italicized-text">here</a> is a list of important definitions. 
     </p>
@@ -114,6 +112,19 @@
       </div>
       <p>Click <a href="products.html" class="italicized-text">here</a> product examples </p>
     </section>
+    <script>
+      var navbar = document.getElementById("navbar");
+      var menu = document.getElementById("menu");
+  
+      window.onscroll = function(){
+        if(window.pageYOffset >= menu.offsetTop) {
+          navbar.classList.add("sticky");
+        }
+        else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
   </body>
   <footer class="footer">
     <p>ChipletConnect &copy; - 2023<br>Benjamin Cannon</p>
