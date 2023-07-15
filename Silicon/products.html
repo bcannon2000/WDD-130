@@ -27,72 +27,135 @@
       <div class=zen-logo>
         <img src="images/Product_images/Zen_logo.avif" alt="Zen 1">
       </div>
-      <p> The importance of AMD's Zen microarchitecture lies in its significant impact on the semiconductor industry and AMD's competitiveness. It brought competitive performance, improved power efficiency, and scalability to AMD processors, challenging Intel's dominance and disrupting the CPU market. Zen revitalized AMD's position, expanded its product lineup, and drove innovation and choice for consumers and businesses. </p>
-      <p> Zen brought the era of chiplets with the modularity, integration, manufacturing efficiency, performance optimization, and scalability to their processors, allowing AMD to deliver competitive products and adapt to evolving market needs effectively. This allowed for the nearly bankrupt company to make a single die that worked for every product line up including but no limited to: desktops, workstations, and servers. This one "MCM" die allowed them to make products stack that went against Intel's 8 diffrent dies. </p>
+      <p> The importance of AMD's Zen microarchitecture lies in its significant impact on the semiconductor industry and AMD's competitiveness. It brought competitive performance, 
+        improved power efficiency, and scalability to AMD processors, challenging Intel's dominance and disrupting the CPU market. Zen revitalized AMD's position, expanded its product 
+        lineup, and drove innovation and choice for consumers and businesses. 
+      </p>
+      <p> Zen brought the era of chiplets with the modularity, integration, manufacturing efficiency, performance optimization, and scalability to their processors, allowing AMD to 
+        deliver competitive products and adapt to evolving market needs effectively. This allowed for the nearly bankrupt company to make a single die that worked for every product 
+        line up including but no limited to: desktops, workstations, and servers. This one "MCM" die allowed them to make products stack that went against Intel's 8 diffrent dies. 
+      </p>
       
       <h3 id="Zen-1">Zen 1/Zen+</h3>
       <p>2017-2019</p>
       <img src="images/Product_images/Zen_1_EPYC.avif" alt="Zen 1">
-      <p>Text about Zen 1/Zen+</p>
-      
+      <p>
+        AMD's Zen 1 architecture was a significant departure from the Bulldozer architecture, which was so bad that it nearly bankrupted AMD. Zen was designed to be more efficient and 
+        scalable from the ground up, bringing several new features and, more importantly, massive performance gains. Their goal was a 40% performance per core increase, but they 
+        exceeded their expectations and got a huge 52% performance improvement.  
+      </p>
+      <p>
+        Due to Intel's lack of innovation, along with the delay of Intel's new process node called "10nm," this allowed for a significant opening in the market. This opening and Intel's 
+        stagnation allowed AMD to provide over two times the performance per dollar for all core workloads and only slightly slower single-core and gaming performance.
+      </p>
       <h3>Zen 2/3</h3>
       <p>2019-2022</p>
       <div class=img>
         <img src="images/Product_images/Milan.avif" alt="Zen 2/3">
       </div>
-      <p>Text about Zen 2/3</p>
+      <p>
+        AMD's Zen 2 was the first significant revolutionary design change since Zen 1's defacto most revolutionary design modern chips. Zen 2 was the first true chiplet processor on 
+        the market and allowed for substantial performance improvements and the same or lower power consumption. Unlike the original Zen, which had multiple of the same chips 
+        acting like a single CPU, Zen 2 separated the cores and cache from all of the other essential parts of the processor.
+      </p>
+      <p>	
+        Not only did this allow AMD to bring more cores to the desktop, but allowed them to push their servers processors from 32 cores with Zen 1 EPYC, code-named Napels, to 64 cores 
+        with Zen 2 EPYC, code-named Rome.
+      </p>
       
       <h3>Zen 3D</h3>
       <p>2022-current</p>
       <div class=img>
         <img src="images/Product_images/3D_V-cache.avif" alt="Zen 3D">
       </div>
-      <p>Text about Zen 3D</p>
+      <p>AMD's Zen 3D CPU packaging advancements use chiplet stacking and hybrid bonding to create data center CPUs with higher performance and lower power consumption. Chiplet 
+        stacking allows multiple dies to be stacked on top of each other, creating a single, more powerful chip. The stacked die in AMD's Zen 3D data center CPUs is a normal Zen 3 
+        chiplet, but has an extra cache die stacked on top, increase the Level 3 cache from 32 MB to 96 MB per Chiplet. which means that the L3 cache is physically closer to the 
+        compute dies, which can improve performance. This allows AMD to create CPUs with higher performance and lower power consumption.
+      </p>
+      <p>
+        The first Zen 3D data center CPU, the EPYC 7003X Milan-X, was released in Q1 2022. The EPYC 7003X Milan-X has a stacked 64MB L3 cache die, which provides a significant 
+        performance boost over the EPYC 7003X Milan. In some benchmarks, the EPYC 7003X Milan-X is up to 50% faster than the EPYC 7003X Milan in specific workloads.
+      </p>
       
       <h3>Zen 4</h3>
       <p>2022-current</p>
       <div class=img>
         <img src="images/Product_images/Genoa.avif" alt="Zen 4">
       </div>
-      <p>Text about Zen 4</p>
-      
+      <p>
+        Zen 4 was another significant design change with another massive core count jump at a similar cost and power consumption. The picture above shows the server CPU code named 
+        Genoa. Genoa improved single core notably but also increased the core count from 64 Zen 3 cores to 96 Zen 4 cores, outpacing their competition's max of 40 cores at the time.
+      </p>
+      <p>
+        Genoa also came with a 3D stacked cache L3 variant called Genoa-X. Genoa-X increase the total L3 cache from 384 MB to a massive 1,152 MB. However, this was not the significant 
+        design change with Zen 4 EPYC, which goes to Zen 4C or the cloud variant of Zen 4 codenamed Bergamo.
+      </p>
+      <div class=img>
+        <img src="images/Product_images/amd_bergamo_epyc.avif" alt="Zen 4">
+      </div>
+      <p>
+        Bergamo is another revolutionary design change for Zen. What makes Zen 4C another revolutionary design change is that it is only a minor design change from the standard Zen 4 
+        core. Zen 4C is the same Zen 4 design but more compact and has half the L3 cache per core and the removal of the 3D cache option. That's it, nothing else. In servers, where all 
+        core workloads are more critical than single-core in most cases, Zen 4C is perfect.
+      </p>
+      <p>
+        Bergamo doubles their core count per CPU chiplet from 8 cores with 32MB of L3 to 16 cores with 32 MB of L3. Zen 4C increases multi-core performance while being cheaper for AMD 
+        to produce and even more power efficient than Genoa. Bergamo uses 62% less silicon and is up to 350% more energy efficient while costing 65% less than dual Intel's latest server 
+        platform Sapphire Rapids server CPUs, which STILL have eight few cores, capping out at 120 cores.
+      </p>
+
       <h3>MI300</h3>
       <p>Late 2023</p>
       <div class=img>
         <img src="images/Product_images/MI300A.avif" alt="MI300">
       </div>
-      <p>Text about MI300</p>
+      <p>MI300 is an engineering marvel. This takes the advancements in chiplets and advanced packaging, and turns it up to an 11 with up to 16 seprate chiplets. This is the first data 
+        center APUs, or Advanced Processing Unit. This combines Zen 4 chiplets and their compute focused CDNA 3 chiplets. Each MI300 configuration has 4 or 2 base tiles, where each 
+        one can have either have 3 x 8 core Zen 4 chiplets or 2 CDNA chiplets stacked on each base tile. They are stacked using 3D stacking hybrid bonding with 4 diffrent configurations.</p>
+      <p>
+        This modularity allows for a pure GPU focused on maximum compute performance called MI300X. A hybrid with 24 CPU cores and GPU compute, concentrated on power efficiency by 
+        reducing power loss in communicating between separate CPUs and GPUs called MI300A. A pure CPU configuration that allows for the benefit of having memory extremely close to 
+        the CPU is called MI300C.
+      </p>
+      <p>
+        Due to 3D stacking, advanced packaging, and other technology advancements, AMD claims that MI300 is eight times faster while having five times the performance per watt.
+      </p>
     </section>
+
+
+
+
+
 
     <section class="Intel">
       <h1>Evolution of Intel chiplet products</h1>
-      <p>Intel "Core"</p>
+      <p>Kaby Lake G</p>
       <div class=img>
-        <img src="images/blank.avif" alt="Lake Field Picture">
+        <img src="images/Product_images/Kaby_Lake-G.avif" alt="Kaby Lake-G Picture">
       </div>
-      <p>Struggles to get them working</p>
 
       <h3>Lake Field</h3>
       <div class=img>
-        <img src="images/blank.avif" alt="Lake Field Picture">
+        <img src="images/Product_images/Lake_field.avif" alt="Lake Field Picture">
       </div>
       <p>Text about Lake Field</p>
 
       <h3>Sapphire Rapids</h3>
       <div class=img>
-        <img src="images/blank.avif" alt="Sapphire Rapids">
+        <img src="images/Product_images/Sapphire Rapids.avif" alt="Sapphire Rapids">
       </div>
       <p>Text about Sapphire Rapids</p>
 
       <h3>Ponte Vecchio</h3>
       <div class="img">
-        <img src="images/blank.avif" alt="Ponte Vecchio Picture">
+        <img src="images/Product_images/Ponte Vecchio.avif" alt="Ponte Vecchio Picture">
       </div>
       <p>Text about Ponte Vecchio</p>
 
       <h3>Meteor Lake</h3>
       <div class="img">
-        <img src="images/blank.avif" alt="Meteor Lake Picture">
+        <img src="images/Product_images/Meteor Lake.avif" alt="Meteor Lake Picture">
       </div>
       <p>Text about Meteor Lake</p>
     </section>
