@@ -2,10 +2,9 @@
 <html lang="en-us">
   <head>
     <title>Chiplet Products</title>
-    <meta charset="utf-8" />
-    <link type="text/css" rel="stylesheet" href="styles/products.css" />
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="styles/products.css">
   </head>
-  <body>
 
     <body class="content-container">
       <header id="menu">
@@ -19,7 +18,6 @@
           <a href="definitions.html">Important Definitions</a>
         </nav>
       </header>
-    </div>
 
     <section class="AMD">
       <h1>Evolution of AMD chiplet products</h1>
@@ -101,9 +99,16 @@
       </p>
       <p>
         Bergamo doubles their core count per CPU chiplet from 8 cores with 32MB of L3 to 16 cores with 32 MB of L3. Zen 4C increases multi-core performance while being cheaper for AMD 
-        to produce and even more power efficient than Genoa. Bergamo uses 62% less silicon and is up to 350% more energy efficient while costing 65% less than dual Intel's latest server 
-        platform Sapphire Rapids server CPUs, which STILL have eight few cores, capping out at 120 cores.
+        to produce and even more power efficient than Genoa. Bergamo uses 62% less silicon and is 250% more energy efficient on average while costing 30% less than Intel's latest server 
+        platform Sapphire Rapids server CPUs.
       </p>
+
+      <h3>RDNA 3</h3>
+      <p>2022</p>
+      <div class="img">
+        <img src="images/Product_images/RDNA_3.avif" alt="RDNA 3">
+      </div>
+      <p>Text about RDNA 3</p>
 
       <h3>MI300</h3>
       <p>Late 2023</p>
@@ -130,63 +135,75 @@
 
     <section class="Intel">
       <h1>Evolution of Intel chiplet products</h1>
-      <p>Kaby Lake G</p>
+      <h3>Kaby Lake G</h3>
       <div class=img>
-        <img src="images/Product_images/Kaby_Lake-G.avif" alt="Kaby Lake-G Picture">
+        <img src="images/Product_images/Kaby_Lake-G.avif" alt="Kaby Lake-G">
       </div>
+      <p>Text about Kaby Lake G</p>
 
       <h3>Lake Field</h3>
       <div class=img>
-        <img src="images/Product_images/Lake_field.avif" alt="Lake Field Picture">
+        <img src="images/Product_images/Lake_field.avif" alt="Lake Field">
       </div>
       <p>Text about Lake Field</p>
 
       <h3>Sapphire Rapids</h3>
+      <p>2023</p>
       <div class=img>
-        <img src="images/Product_images/Sapphire Rapids.avif" alt="Sapphire Rapids">
+        <img src="images/Product_images/Sapphire_Rapids.avif" alt="Sapphire">
       </div>
       <p>Text about Sapphire Rapids</p>
 
       <h3>Ponte Vecchio</h3>
+      <p>2023</p>
       <div class="img">
-        <img src="images/Product_images/Ponte Vecchio.avif" alt="Ponte Vecchio Picture">
+        <img src="images/Product_images/Ponte_Vecchio.avif" alt="Ponte Vecchio ">
       </div>
       <p>Text about Ponte Vecchio</p>
 
       <h3>Meteor Lake</h3>
+      <p>Late 2023</p>
       <div class="img">
-        <img src="images/Product_images/Meteor Lake.avif" alt="Meteor Lake Picture">
+        <img src="images/Product_images/Meteor_Lake.avif" alt="Meteor Lake">
       </div>
       <p>Text about Meteor Lake</p>
-    </section>
-  </body>
-  <footer class="footer">
-    <p>ChipletConnect &copy; - 2023<br>Benjamin Cannon</p>
-    <p><a href="#">About</a></p>
-    <p><a href="site-plan-ChipletConnect.html">Site Plan</a></p>
-    <div class="social">
-        <a href="https://facebook.com" target="_blank">
-            <img src="images/facebook.avif" alt="fb icon">
-        </a>
-        <a href="https://twitter.com">
-            <img src="images/twitter.avif" alt="twitter icon">
-        </a>
-        <a href="https://instagram.com">
-            <img src="images/instagram.avif" alt="instagram icon">
-        </a>
-    </div>
-  </footer>
-  <script>
-    var navbar = document.getElementById("navbar");
-    var menu = document.getElementById("menu");
 
-    window.onscroll = function(){
-      if(window.pageYOffset >= menu.offsetTop) {
-        navbar.classList.add("sticky");
+      <h3>Falcon Shores</h3>
+      <p>2024</p>
+      <div class="img">
+        <img src="images/Product_images/Falcon_Shores.avif" alt="Falcon Shores">
+      </div>
+      <p>Text about Falcon Shores</p>
+
+    </section>
+    <footer class="footer">
+      <p>ChipletConnect &copy; - 2023<br>Benjamin Cannon</p>
+      <p><a href="#">About</a></p>
+      <p><a href="site-plan-ChipletConnect.html">Site Plan</a></p>
+      <div class="social">
+          <a href="https://facebook.com" target="_blank">
+              <img src="images/facebook.avif" alt="fb icon">
+          </a>
+          <a href="https://twitter.com">
+              <img src="images/twitter.avif" alt="twitter icon">
+          </a>
+          <a href="https://instagram.com">
+              <img src="images/instagram.avif" alt="instagram icon">
+          </a>
+      </div>
+    </footer>
+    <script>
+      var navbar = document.getElementById("navbar");
+      var menu = document.getElementById("menu");
+
+      window.onscroll = function(){
+        if(window.pageYOffset >= menu.offsetTop) {
+          navbar.classList.add("sticky");
+        }
+        else {
+          navbar.classList.remove("sticky");
+        }
       }
-      else {
-        navbar.classList.remove("sticky");
-      }
-    }
-  </script>
+    </script>
+  </body>
 </html>
